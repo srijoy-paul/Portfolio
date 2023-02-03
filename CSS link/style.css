@@ -18,6 +18,16 @@ header {
   padding: 2rem;
 }
 
+#my-title{
+  margin: 15px 0;
+}
+
+.dynamic-content-style{
+  letter-spacing: 1.3px;
+  color:#00ADB5;
+  font-weight: 700;
+}
+
 section {
   margin: 2rem 1rem;
   /* line-height: 1.5rem; */

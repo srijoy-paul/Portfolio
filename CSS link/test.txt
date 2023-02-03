@@ -1,0 +1,5 @@
+
+I have started my journey since December 2020.
+
+Learning C as my first language, then shifted to C++ as my primary language, to getting my hand's dirty in DSA.
+Can write code in Java a novice level.
