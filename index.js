@@ -1,9 +1,9 @@
 const dynamic_content = document.getElementById("dynamic-content");
 
-const phrases = ["Programmer...", "Frontend Developer...", "Avid explorer in Ai/Ml..."];
+const phrases = ["Human...", "Programmer...", "Web Developer...", "Avid explorer of Ai/Ml..."];
 console.log(dynamic_content);
 
-const phraseIndex = 0;
+let phraseIndex = 0;
 let letterIndex = 0;
 
 
@@ -30,5 +30,16 @@ function clearChars() {
         letterIndex--;
         setTimeout(clearChars, 100);
     }
+    else {
+        phraseIndex++;
+        if (phraseIndex >= phrases.length) {
+            phraseIndex = 0;
+        }
+        letterIndex = 0;
+        setTimeout(() => {
+            displayChars(phrases[phraseIndex]);
+        }, 300);
+    }
 }
+
 displayChars(phrases[phraseIndex]);
