@@ -12,7 +12,13 @@ function displayChars(phrase) {
 
     if (letterIndex == phrase.length) clearChars();
     else if (letterIndex < phrase.length) {
-        dynamic_content.innerText += phrase.charAt(letterIndex);
+        const currentChar = phrase.charAt(letterIndex);
+        if (currentChar === " ") {
+            dynamic_content.innerHTML += "&nbsp;";
+        }
+        else {
+            dynamic_content.innerText += phrase.charAt(letterIndex);
+        }
         letterIndex++;
         setTimeout(() => {
             displayChars(phrase);
